@@ -1,8 +1,5 @@
 a = document.getElementById('post hentry');
-if (a) {
-	b = a.getElementsByTagName("p");
-	for (i = 0; i < b.length; i++) {
-		if (b.item(i).getAttribute('CLASS') == 'post-body entry-content') { 
+if (a.item(i).getAttribute('CLASS') == 'post-body entry-content') { 
                 _str = b.item(i).innerHTML.replace(/:\)\)/gi, "<img src='http://us.i1.yimg.com/us.yimg.com/i/mesg/emoticons7/21.gif' alt='' class='smiley'/>");
 		_str = _str.replace(/:\)\]/gi, "<img src='http://us.i1.yimg.com/us.yimg.com/i/mesg/emoticons7/100.gif' alt='' class='smiley'/>");                
 		_str = _str.replace(/;\)\)/gi, "<img src='http://us.i1.yimg.com/us.yimg.com/i/mesg/emoticons7/71.gif' alt='' class='smiley'/>");
@@ -27,6 +24,4 @@ if (a) {
 		_str = _str.replace(/x\(/gi, "<img src='http://us.i1.yimg.com/us.yimg.com/i/mesg/emoticons7/14.gif' alt='' class='smiley'/>"); 
 		_str = _str.replace(/\=\)\)/ig,"<img src='http://us.i1.yimg.com/us.yimg.com/i/mesg/emoticons7/24.gif' alt='' class='smiley'/>")
 b.item(i).innerHTML = _str; 
-} 
-} 
 }
